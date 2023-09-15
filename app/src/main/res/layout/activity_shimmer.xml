@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="310dp"
+        android:padding="8dp"
+        android:layout_margin="2dp"
+        app:cardCornerRadius="15dp"
+        android:elevation="80dp"
+        android:transitionGroup="true"
+        android:outlineAmbientShadowColor="@color/black"
+        android:id="@+id/cardview">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:orientation="vertical">
+
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/venue_image"
+                android:layout_width="match_parent"
+                android:layout_height="175dp"
+                android:adjustViewBounds="true"
+                android:layout_marginTop="8dp"
+                android:scaleType="centerCrop"
+                android:background="#B3B3B3"
+                app:shapeAppearanceOverlay="@style/roundimage"></com.google.android.material.imageview.ShapeableImageView>
+
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="5"
+                android:padding="5dp"
+                android:layout_margin="12dp"
+                android:id="@+id/address_content"
+                android:textSize="15sp"
+                android:background="#B3B3B3">
+            </TextView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#B3B3B3"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/design_default_color_error"
+                    android:textStyle="bold"
+                    android:id="@+id/rate_of_venue"
+                    android:layout_marginTop="4dp"
+                    android:textSize="18sp"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#B3B3B3"
+                    android:layout_marginLeft="1dp"
+                    android:id="@+id/capacity_num"
+                    android:textSize="13sp"
+                    android:textStyle="italic"
+                    android:textColor="@color/design_default_color_error">
+                </TextView>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

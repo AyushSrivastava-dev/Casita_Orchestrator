@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "392349313227",
+    "firebase_url": "https://casita-v1-default-rtdb.firebaseio.com",
+    "project_id": "casita-v1",
+    "storage_bucket": "casita-v1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:392349313227:android:ac20d7331576427f2bd34e",
+        "android_client_info": {
+          "package_name": "com.example.casita_v1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "392349313227-iq6avbrb9mn8120kdvs5gmts35jlk2lh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbURFGvQ3PSCTFwq4e6C0CrytPfMR9FjU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "392349313227-iq6avbrb9mn8120kdvs5gmts35jlk2lh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="310dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:padding="8dp"
+        android:layout_margin="2dp"
+        app:cardCornerRadius="15dp"
+        android:elevation="80dp"
+        android:transitionGroup="true"
+        android:outlineAmbientShadowColor="@color/black"
+        android:id="@+id/cardview">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:orientation="vertical">
+
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/venue_image"
+                android:layout_width="match_parent"
+                android:layout_height="175dp"
+                android:adjustViewBounds="true"
+                android:layout_marginTop="8dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_launcher_background"
+                app:shapeAppearanceOverlay="@style/roundimage"></com.google.android.material.imageview.ShapeableImageView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/venueFull_name"
+                    android:layout_weight="0.5"
+                    android:padding="5dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+
+                    android:textColor="@color/black"
+                    android:text="Venue Name is this la nlaksdjfaldkfjasldkfjasdlkfjasdlk"
+
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:textSize="20sp"/>
+                <pl.droidsonroids.gif.GifImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/star_images"
+                    app:loopCount="5"
+                    android:src="@drawable/star_rating"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+
+                    android:maxLines="1"
+                    android:id="@+id/ratings_field"
+                    android:layout_weight="0"
+                    android:textSize="14sp"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="@color/black"
+                    android:text="Ratings"/>
+            </LinearLayout>
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:padding="2dp"
+                    android:id="@+id/address_content"
+                    android:textSize="12sp"
+                    android:text="Address">
+                </TextView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/new_rupee"
+                    android:layout_gravity= "center_vertical"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Rate"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/design_default_color_error"
+                    android:textStyle="bold"
+                    android:id="@+id/rate_of_venue"
+                    android:layout_marginTop="4dp"
+                    android:textSize="18sp"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="18dp"
+                android:layout_marginBottom="2dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/people"
+                    android:layout_gravity="center_vertical"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="capacity no."
+                    android:layout_marginLeft="1dp"
+                    android:id="@+id/capacity_num"
+                    android:textSize="13sp"
+                    android:textStyle="italic"
+
+                    android:textColor="@color/design_default_color_error">
+                </TextView>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

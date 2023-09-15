@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="4dp"
+    android:orientation="vertical"
+    tools:context=".ShowActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="48dp">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/main_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Casita_Orchestrator"
+                    android:textColor="#E91E63"
+                    android:textSize="20sp"
+                    android:textStyle="bold"></TextView>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="0dp"
+                    android:scaleType="fitStart"
+                    android:src="@drawable/house">
+
+                </ImageView>
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:shimmer_repeat_mode="restart"
+        app:shimmer_shape="radial">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/activity_shimmer"></include>
+
+            <include layout="@layout/activity_shimmer"></include>
+
+            <include layout="@layout/activity_shimmer"></include>
+
+            <include layout="@layout/activity_shimmer"></include>
+
+            <include layout="@layout/activity_shimmer"></include>
+
+            <include layout="@layout/activity_shimmer"></include>
+        </LinearLayout>
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/filter_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_marginRight="22dp"
+            android:layout_marginBottom="22dp"
+            android:background="@drawable/circular"
+            android:backgroundTintMode="src_in"
+            android:clickable="true"
+            android:elevation="8dp"
+            android:foregroundTintMode="src_in"
+            app:backgroundTint="@color/white"
+            app:fabSize="auto"
+            app:rippleColor="#FFFFFF"
+            app:srcCompat="@drawable/circular">
+
+        </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="1dp" />
+    </FrameLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

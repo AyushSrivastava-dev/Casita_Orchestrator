@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Casita_v1</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="developer_phone_number">9455821953</string>
+    <string name="about_application">This application helps to manage and plan nice events by provides a list of
+    various venues that match your requirements and also provides the other details about those venues like location,ratings,reviews,
+    contact details.\nFor venue manager/vendors it provides admin signup to enlist their venues in this application to increase their customers.\n
+    This application also provides the list of services/amenities that could be used with specific event.</string>
+    <string name="contact_details">Email : shaktimansince2000@gmail.com \n Phone no. : 1234567890
+    \n Developer: Ayush Srivastava and Hritik Gautam</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
